@@ -1,5 +1,1 @@
 google.com, pub-1841543057514811, DIRECT, f08c47fec0942fa0
-
-# Fichier ads.txt pour Google AdSense
-# Déployé sur GitHub Pages : https://titis212142.github.io/systemcare-ads/ads.txt
-# URL d'accès : https://titis212142.github.io/systemcare-ads/ads.txt
