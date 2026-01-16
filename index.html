@@ -1,154 +1,181 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Meta tag de vérification AdSense -->
-    <meta name="google-adsense-account" content="ca-pub-1841543057514811">
+    <meta name="google-adsense-account" content="ca-pub-1841543057514811" />
     <!-- AdSense code snippet -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1841543057514811"
-            crossorigin="anonymous"></script>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1841543057514811"
+      crossorigin="anonymous"
+    ></script>
     <title>Publicité SystemCare Pro</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial,
+          sans-serif;
+        background: #f5f5f5;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      .ad-container {
+        width: 100%;
+        max-width: 728px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+
+      .ad-banner {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: opacity 0.3s ease;
+        cursor: pointer;
+      }
+
+      .ad-banner:hover {
+        opacity: 0.9;
+      }
+
+      .ad-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        padding: 12px 20px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 8px;
+        color: white;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .ad-icon {
+        font-size: 32px;
+      }
+
+      .ad-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .ad-title {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 4px;
+      }
+
+      .ad-subtitle {
+        font-size: 12px;
+        opacity: 0.9;
+      }
+
+      /* Animation */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
         }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-            background: #f5f5f5;
-            width: 100%;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
+        to {
+          opacity: 1;
         }
-        
-        .ad-container {
-            width: 100%;
-            max-width: 728px;
-            height: 100px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
-        
-        .ad-banner {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            border-radius: 8px;
-            transition: opacity 0.3s ease;
-            cursor: pointer;
-        }
-        
-        .ad-banner:hover {
-            opacity: 0.9;
-        }
-        
-        .ad-content {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            padding: 12px 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 8px;
-            color: white;
-            text-align: center;
-            width: 100%;
-            height: 100%;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        
-        .ad-icon {
-            font-size: 32px;
-        }
-        
-        .ad-text {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-        
-        .ad-title {
-            font-size: 16px;
-            font-weight: 600;
-            margin-bottom: 4px;
-        }
-        
-        .ad-subtitle {
-            font-size: 12px;
-            opacity: 0.9;
-        }
-        
-        /* Animation */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-        
-        .ad-container {
-            animation: fadeIn 0.5s ease-in;
-        }
+      }
+
+      .ad-container {
+        animation: fadeIn 0.5s ease-in;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="ad-container">
-        <!-- Publicité Premium (toujours visible) -->
-        <a href="https://www.microsoft.com/store/apps" target="_blank" class="ad-banner" id="premium-ad">
-            <div class="ad-content">
-                <div class="ad-icon">💎</div>
-                <div class="ad-text">
-                    <div class="ad-title">Passez à Premium</div>
-                    <div class="ad-subtitle">Optimisations illimitées • Sans publicité • Monitoring 24/7</div>
-                </div>
+      <!-- Publicité Premium (toujours visible) -->
+      <a
+        href="https://www.microsoft.com/store/apps"
+        target="_blank"
+        class="ad-banner"
+        id="premium-ad"
+      >
+        <div class="ad-content">
+          <div class="ad-icon">💎</div>
+          <div class="ad-text">
+            <div class="ad-title">Passez à Premium</div>
+            <div class="ad-subtitle">
+              Optimisations illimitées • Sans publicité • Monitoring 24/7
             </div>
-        </a>
-        
-        <!-- Google AdSense (sera activé une fois approuvé) -->
-        <div id="adsense-container" style="display:none; width:100%; height:100%;">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1841543057514811"
-                    crossorigin="anonymous"></script>
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-1841543057514811"
-                 data-ad-slot="auto"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
+          </div>
         </div>
+      </a>
+
+      <!-- Google AdSense (sera activé une fois approuvé) -->
+      <div
+        id="adsense-container"
+        style="display: none; width: 100%; height: 100%"
+      >
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1841543057514811"
+          crossorigin="anonymous"
+        ></script>
+        <ins
+          class="adsbygoogle"
+          style="display: block"
+          data-ad-client="ca-pub-1841543057514811"
+          data-ad-slot="auto"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        ></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
     </div>
-    
+
     <script>
-        // Pour l'instant, on garde la publicité Premium visible
-        // Une fois AdSense approuvé, vous pouvez activer cette partie :
-        /*
-        setTimeout(function() {
-            var adsenseContainer = document.getElementById('adsense-container');
-            var premiumAd = document.getElementById('premium-ad');
-            var adsbygoogle = adsenseContainer.querySelector('.adsbygoogle');
-            
-            if (adsbygoogle && adsbygoogle.offsetHeight > 50) {
-                // AdSense a chargé avec succès
-                premiumAd.style.display = 'none';
-                adsenseContainer.style.display = 'block';
-            }
-        }, 5000);
-        */
+      // AdSense est maintenant vérifié, on active les publicités
+      // On essaie d'afficher AdSense, avec fallback sur la publicité Premium
+      setTimeout(function () {
+        var adsenseContainer = document.getElementById("adsense-container");
+        var premiumAd = document.getElementById("premium-ad");
+
+        // Afficher AdSense
+        adsenseContainer.style.display = "block";
+
+        // Vérifier si AdSense a chargé après 3 secondes
+        setTimeout(function () {
+          var adsbygoogle = adsenseContainer.querySelector(".adsbygoogle");
+
+          if (adsbygoogle && adsbygoogle.offsetHeight > 50) {
+            // AdSense a chargé avec succès
+            premiumAd.style.display = "none";
+          } else {
+            // AdSense n'a pas chargé, garder la publicité Premium
+            adsenseContainer.style.display = "none";
+            premiumAd.style.display = "block";
+          }
+        }, 3000);
+      }, 500);
     </script>
-</body>
+  </body>
 </html>
